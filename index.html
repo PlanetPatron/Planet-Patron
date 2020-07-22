@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🚀 Planet Patron</title>
+    <script src="https://use.fontawesome.com/bad76607ad.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script src="js/flickity.js"></script>
+    <script src="js/tota11y.min.js"></script>
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>
+
+<body>
+    <a class="screen-reader-text" href="#main">Skip to content</a>    
+  <header>
+    <img class="logo1" src="assets/images/logo1.jpg" alt="Image of Logo1" > 
+    <nav>
+        <ul>
+          <li><a href="#main">About</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#updates">Updates</a></li>
+        </ul>
+    </nav>
+    <div class="cart"> 
+      <img class="cart-logo" src="assets/images/cart-icon.svg"  alt="Image of a cart" >
+    </div>
+  </header>
+
+  <section class="hero-image">
+    <p class="hero-image-title">
+      Help Your Local Small Businesses!
+    </p>
+    <h1 class="hero-image-subtitle">
+      Planet Patron
+    </h1>
+  </section>
+    <section class="mission" id="main" tabindex="-1">
+    <h2>
+      Our Mission
+    </h2>
+    <p>
+      Planet Patron Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+      aliquip ex ea commodo consequat. 
+    </p>
+  </section>
+
+  <section class="hero" id="signup"> 
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="assets/images/fb1.png">
+                <img src="assets/images/tw1.png"> 
+                <img src="assets/images/gp1.png">
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="type" class="input-field" placeholder="User Id" required>
+                <input type="type" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span> Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="type" class="input-field" placeholder="User Id" required>
+                <input type="type" class="input-field" placeholder="Email ID" required>
+                <input type="type" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span> I agree to the terms and conditions.</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>  
+        </div> 
+
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    <script>
+  </section>
+
+
+</body>
+</html>
